@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.background img{
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f9fafb;
+}
+
+.hero-text{
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.form-container{
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    box-shadow:  #E5E7EB 0px 5px 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form div{
+    display: flex;
+}
+
+form div div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
