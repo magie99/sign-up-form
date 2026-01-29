@@ -1,14 +1,31 @@
+*{
+     box-sizing: border-box;
+}
+
 body{
-    box-sizing: border-box;
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.background img{
+.background{
     height: 100vh;
+    min-width: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1568713852916-798012dd28c3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.odin{
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .content{
@@ -21,13 +38,16 @@ body{
 }
 
 .hero-text{
-    padding: 30px;
+    text-wrap: balance;
+    padding: 40px;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .form-container{
-    padding: 30px;
-    width: 100%;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     background-color: white;
     border: 1px solid #E5E7EB;
     box-shadow:  #E5E7EB 0px 5px 5px;
@@ -48,3 +68,30 @@ form div div{
     margin-right: 30px;
     margin-bottom: 10px;
 }
+
+form :focus {  
+    border: 0.5px solid #3262a8; 
+    box-shadow: grey 0px 4px 4px;
+}
+
+form :invalid{
+    border: 0.5px solid red; 
+}
+
+button {
+    margin-left: 40px;
+    background-color: rgb(11, 83, 11);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logIn{
+    padding-left: 40px;
+    font-size: 16px;
+}
+

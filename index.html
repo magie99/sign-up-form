@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="background">
-        <img src="background.jpg" alt="a green fern">
+        <div class="odin">Odin</div>
     </div>
     <div class="content">
         <div class="hero-text">
@@ -16,7 +16,7 @@
             <p>You <i>know</i> you want to!</p>
         </div>
         <div class="form-container">
-            <p>Let's do this!</p>
+            <h2>Let's do this!</h2>
             <form>
                 <div>
                     <div>
@@ -41,16 +41,19 @@
                 <div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input type="password" name="confirm-password" id="confirm-password" required>
                     </div>
                 </div>
             </form>
         </div>
-        <button id="create-btn">Create Account</button>
+        <div>
+            <button id="create-btn">Create Account</button>
+        </div>
+        <p class="logIn">Already have an account? <a href="#">log in</a></p>
     </div>
 </body>
 </html>
