@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SeasideResortNF';
+    src: url('SeasideResortNF.woff2') format('woff2'),
+        url('SeasideResortNF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'SeasideResortNF';
+    src: url('fonts/SeasideResortNF.woff2') format('woff2'),
+        url('fonts/SeasideResortNF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 *{
      box-sizing: border-box;
 }
@@ -15,17 +26,18 @@ body{
     min-width: 30vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(https://images.unsplash.com/photo-1568713852916-798012dd28c3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(background.jpg);
 }
 
 .odin{
+    color:white;
+    font-family: 'SeasideResortNF';
+    font-size: 4rem;
     margin-top: 30vh;
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.3);
-    font-size: 2rem;
-    font-weight: bold;
+    background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .content{
@@ -41,7 +53,6 @@ body{
     text-wrap: balance;
     padding: 40px;
     font-size: 2rem;
-    font-weight: 500;
 }
 
 .form-container{
@@ -95,3 +106,16 @@ button {
     font-size: 16px;
 }
 
+.credit{
+    min-width: 30vw;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.credit a{
+    text-decoration: underline;
+    color: white;
+}
